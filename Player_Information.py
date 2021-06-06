@@ -17,7 +17,7 @@ player2_computer_names = [
 ]
 
 player2_human_names = [
-    "friend", "f", "my friend", "a friend", "my fiance", "fiance", "stryker", "sarah", "hon", "beb", "honbon", "wife",
+    "friend", "f", "my friend", "a friend", "my fiance", "fiance", "stryker", "sarah", "wife",
     "husband", "my wife", "my husband", "my hubby", "hubby", "wifey"
 ]
 
@@ -42,12 +42,12 @@ def define_players():
     pause()
     print("\nHello! Welcome to Tic-Tac-Toe!")
     pause()
-    print("You can type \"quit\" any time to quit the game.")
+    print('You can type "quit" any time to quit the game.')
     pause()
     print("\nWhat's your name?")
     response = input("> ")
     if response.lower() == "quit":
-        return ""  # Might need to change this return thing to a list
+        return ""  # Might need to change this return str to a list
     else:
         player1 = Player(response, define_player_symbol())
         if player1.symbol == "quit":
